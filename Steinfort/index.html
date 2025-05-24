@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Steinfort</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-entree1">
+        <li class="text">Entree1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-entree2">
+        <li class="text">Entree2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-hall1">
+        <li class="text">Hall1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-kummer2">
+        <li class="text">Kummer2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-living1">
+        <li class="text">Living1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-living2">
+        <li class="text">Living2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-hall2">
+        <li class="text">Hall2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-kichen">
+        <li class="text">Kichen</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-sdb">
+        <li class="text">Sdb</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-hall3">
+        <li class="text">Hall3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-kummer1">
+        <li class="text">Kummer1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-kummer3">
+        <li class="text">Kummer3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-trap1">
+        <li class="text">Trap1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-trap2">
+        <li class="text">Trap2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-spaicher2">
+        <li class="text">Spaicher2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-spaicher1">
+        <li class="text">Spaicher1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-trap3">
+        <li class="text">Trap3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-garage_bannen1">
+        <li class="text">Garage_Bannen1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-garage_bannen">
+        <li class="text">Garage_Bannen</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-heizung">
+        <li class="text">Heizung</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-garage_holz">
+        <li class="text">Garage_Holz</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-garage_bannen_hall">
+        <li class="text">Garage_Bannen_Hall</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-keller">
+        <li class="text">Keller</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-buanderie">
+        <li class="text">Buanderie</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-garage_sdd">
+        <li class="text">Garage_sdd</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-garage1">
+        <li class="text">Garage1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-garage2">
+        <li class="text">Garage2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-garage3">
+        <li class="text">Garage3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-gaart1">
+        <li class="text">Gaart1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-gaart2">
+        <li class="text">Gaart2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-gaart3">
+        <li class="text">Gaart3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-terrasse1">
+        <li class="text">Terrasse1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-terrasse2">
+        <li class="text">Terrasse2</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

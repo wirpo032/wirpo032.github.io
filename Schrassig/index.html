@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Schrassig</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-ext1">
+        <li class="text">Ext1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-ext2">
+        <li class="text">Ext2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-entree1">
+        <li class="text">Entree1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-entree2">
+        <li class="text">Entree2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-cuisine1">
+        <li class="text">Cuisine1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-cuisine2">
+        <li class="text">Cuisine2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-hall_nuit_rdc">
+        <li class="text">Hall_Nuit_RDC</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-chambre4">
+        <li class="text">Chambre4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-sdd">
+        <li class="text">Sdd</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-salon1">
+        <li class="text">Salon1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-salon2">
+        <li class="text">Salon2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-salon3">
+        <li class="text">Salon3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-salon_sam">
+        <li class="text">Salon_Sam</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-hall_-1">
+        <li class="text">Hall_-1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-cave">
+        <li class="text">Cave</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-buanderie">
+        <li class="text">Buanderie</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-garage">
+        <li class="text">Garage</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-palier_1">
+        <li class="text">Palier_1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-chambre_ouverte">
+        <li class="text">Chambre_ouverte</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-chambre3">
+        <li class="text">Chambre3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-palier_2">
+        <li class="text">Palier_2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-chambre2">
+        <li class="text">Chambre2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-chambre2_mezz">
+        <li class="text">Chambre2_Mezz</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-chambre1_1">
+        <li class="text">Chambre1_1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-chambre1_2">
+        <li class="text">Chambre1_2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-sdb">
+        <li class="text">Sdb</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-parking">
+        <li class="text">Parking</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-terrasse1">
+        <li class="text">Terrasse1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-terrasse2">
+        <li class="text">Terrasse2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-jardin1">
+        <li class="text">Jardin1</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
